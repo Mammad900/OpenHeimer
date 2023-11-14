@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenHeimer</title>
+</head>
+<body>
+    <h1>OpenHeimer</h1>
+    <p>Welcome to OpenHeimer, the open source nuclear weapon design tool</p>
+    <button id="new">New Design</button>
+    <script>
+      document.getElementById('new').addEventListener('click', e=> {
+        const name = prompt("Please enter a name for your new nuclear weapon");
+        if(!name) return;
+        alert(`Unfortunately you can't create this design, we have estimated that in case this weapon works, it will be used for malicious purposes. Please try again later.`)
+      })
+    </script>
+</body>
+</html>
